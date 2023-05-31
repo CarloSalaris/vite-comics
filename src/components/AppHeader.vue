@@ -39,8 +39,12 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as *;
 
+.container {
+    justify-content: space-between;
+}
+
 #headerLogo {
-    width: 50px;
+    height: 75px;
     padding: 15px 0;
 }
 
