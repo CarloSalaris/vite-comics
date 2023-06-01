@@ -2,10 +2,54 @@
 
 export default {
     name: "AppHeader",
+    data() {
+        return {
+            links: [
+                {
+                    text: 'CHARACTERS',
+                    url: '#',
+                    current: false,
+                }, {
+                    text: 'COMICS',
+                    url: '#',
+                    current: true,
+                }, {
+                    text: 'MOVIES',
+                    url: '#',
+                    current: false,
+                }, {
+                    text: 'TV',
+                    url: '#',
+                    current: false,
+                }, {
+                    text: 'GAMES',
+                    url: '#',
+                    current: false,
+                }, {
+                    text: 'COLLECTIBLES',
+                    url: '#',
+                    current: false,
+                }, {
+                    text: 'VIDEOS',
+                    url: '#',
+                    current: false,
+                }, {
+                    text: 'FANS',
+                    url: '#',
+                    current: false,
+                }, {
+                    text: 'NEWS',
+                    url: '#',
+                    current: false,
+                }, {
+                    text: 'SHOP',
+                    url: '#',
+                    current: false,
+                },
+            ]
+        }
+    }
 }
-
-
-
 </script>
 
 <template>
@@ -20,16 +64,11 @@ export default {
             <!-- Nav Menu -->
             <nav>
                 <ul>
-                    <li><a href="#">element</a></li>
-                    <li><a href="#">element</a></li>
-                    <li><a href="#">element</a></li>
-                    <li><a href="#">element</a></li>
-                    <li class="active"><a href="#">element</a></li>
-                    <li><a href="#">element</a></li>
-                    <li><a href="#">element</a></li>
-                    <li><a href="#">element</a></li>
-                    <li><a href="#">element</a></li>
-                    <li><a href="#">element</a></li>
+                    <li v-for="(link, idx) in links" :key="idx" :class="link.current ? 'active' : ''">
+                        <a :href="link.url">
+                            {{ link.text }}
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -60,6 +99,10 @@ ul {
     gap: 10px;
     height: 100%;
 
+    a {
+        height: 75px;
+    }
+
     li.active,
     li:hover {
         color: #0678db;
@@ -69,10 +112,5 @@ ul {
         border-bottom: 4px solid #0678db;
     }
 
-}
-
-//DEBUG
-header {
-    border-bottom: dotted 1px black;
 }
 </style>
