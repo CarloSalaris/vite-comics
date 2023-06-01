@@ -62,7 +62,35 @@ export default {
         <div id="footMain">
             <div class="container">
                 <nav>
-                    contenuto nav
+                    <!-- Nav Column -->
+                    <div class="navCol">
+                        <h2>DC COMICS</h2>
+                        <ul>
+                            <li><a href="#">Characters</a></li>
+                            <li><a href="#">Comics</a></li>
+                            <li><a href="#">Movies</a></li>
+                            <li><a href="#">TV</a></li>
+                            <li><a href="#">Games</a></li>
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+
+                        <h2>SHOP</h2>
+                        <ul>
+                            <li><a href="#">Shop DC</a></li>
+                            <li><a href="#">Shop DC Collectibles</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Nav Column -->
+                    <div class="navCol">
+                        <h2>DC</h2>
+                    </div>
+
+                    <!-- Nav Column -->
+                    <div class="navCol">
+                        <h2>SITES</h2>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -155,7 +183,7 @@ footer {
 }
 
 #footMain {
-    height: 250px;
+    min-height: 250px;
     background-image: url('../assets/img/footer-bg.jpg');
     background-size: cover;
 
@@ -167,6 +195,22 @@ footer {
 
         nav {
             color: #ffffff;
+            display: flex;
+
+            .navCol {
+                min-width: 120px;
+                padding: 10px;
+                margin: 10px;
+
+                h2 {
+                    font-size: 14px;
+                    margin: 10px 0;
+                }
+
+                li {
+                    padding: 3px;
+                }
+            }
         }
     }
 }

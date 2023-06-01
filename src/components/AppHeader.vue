@@ -101,7 +101,10 @@ ul {
 
     a {
         height: 75px;
-        font-size: 12px;
+    }
+
+    li {
+        font-size: 10px;
         font-weight: 700;
     }
 
