@@ -79,27 +79,27 @@ export default {
                     <ul>
                         <li>
                             <a href="#">
-                                <i class="fa-brands fa-facebook"></i>
+                                <img src="../assets/img/footer-facebook.png" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa-brands fa-twitter"></i>
+                                <img src="../assets/img/footer-twitter.png" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa-brands fa-youtube"></i>
+                                <img src="../assets/img/footer-youtube.png" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa-brands fa-pinterest"></i>
+                                <img src="../assets/img/footer-pinterest.png" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa-solid fa-location-dot"></i>
+                                <img src="../assets/img/footer-periscope.png" alt="">
                             </a>
                         </li>
                     </ul>
@@ -191,6 +191,10 @@ export default {
                 display: flex;
                 gap: 10px;
                 color: #787878;
+
+                li {
+                    width: 20px;
+                }
             }
         }
     }
