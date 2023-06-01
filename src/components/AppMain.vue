@@ -1,7 +1,12 @@
 <script>
 
+import ProductList from './ProductList.vue';
+
 export default {
     name: "AppMain",
+    components: {
+        ProductList
+    }
 }
 
 
@@ -11,7 +16,8 @@ export default {
 <template>
     <main>
         <div class="container">
-            <div class="row"> -- content here -- </div>
+            <!-- cards container -->
+            <ProductList />
         </div>
     </main>
 </template>
@@ -22,7 +28,7 @@ export default {
 main {
     background-color: black;
     color: #ffffff;
-    height: 75px;
+    min-height: 75px;
     padding: 15px 0;
 }
 </style>
