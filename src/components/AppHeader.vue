@@ -101,6 +101,8 @@ ul {
 
     a {
         height: 75px;
+        font-size: 12px;
+        font-weight: 700;
     }
 
     li.active,
