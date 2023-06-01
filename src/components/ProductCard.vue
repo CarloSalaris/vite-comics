@@ -17,19 +17,26 @@ export default {
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as *;
 
 .prodCard {
     width: calc(100% / 6);
-    border: 1px dotted #ffffff;
+    aspect-ratio: 3 / 4;
     padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #313131;
+    }
 
     img {
         width: 100%;
         aspect-ratio: 1 / 1;
         object-fit: cover;
         object-position: top;
+        margin-bottom: 10px;
     }
 
 }

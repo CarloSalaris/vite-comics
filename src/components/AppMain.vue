@@ -18,6 +18,10 @@ export default {
         <div class="container">
             <!-- cards container -->
             <ProductList />
+
+            <div class="buttons">
+                <button>LOAD MORE</button>
+            </div>
         </div>
     </main>
 </template>
@@ -26,9 +30,26 @@ export default {
 @use '../styles/partials/variables.scss' as *;
 
 main {
-    background-color: black;
+    background-color: #1c1c1c;
     color: #ffffff;
     min-height: 75px;
     padding: 15px 0;
+}
+
+.container {
+    display: block;
+}
+
+.buttons {
+    text-align: center;
+
+    button {
+        padding: 10px 50px;
+        color: #ffffff;
+        font-weight: 600;
+        background-color: #0282f9;
+        border: none;
+        cursor: pointer;
+    }
 }
 </style>
