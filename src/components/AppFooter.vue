@@ -25,35 +25,35 @@ export default {
                     <div class="sectionImage">
                         <img src="../assets/img/buy-comics-digital-comics.png" alt="">
                     </div>
-                    <div class="textImage">text</div>
+                    <div class="textImage">DIGITAL COMICS</div>
                 </a>
 
                 <a href="#" class="sectionLink">
                     <div class="sectionImage">
                         <img src="../assets/img/buy-comics-merchandise.png" alt="">
                     </div>
-                    <div class="textImage">text</div>
+                    <div class="textImage">DC MERCHANDISE</div>
                 </a>
 
                 <a href="#" class="sectionLink">
                     <div class="sectionImage">
                         <img src="../assets/img/buy-comics-subscriptions.png" alt="">
                     </div>
-                    <div class="textImage">text</div>
+                    <div class="textImage">SUBSCRIBTION</div>
                 </a>
 
                 <a href="#" class="sectionLink">
                     <div class="sectionImage">
                         <img src="../assets/img/buy-comics-shop-locator.png" alt="">
                     </div>
-                    <div class="textImage">text</div>
+                    <div class="textImage">COMIC SHOP LOCATOR</div>
                 </a>
 
                 <a href="#" class="sectionLink">
                     <div class="sectionImage">
                         <img src="../assets/img/buy-dc-power-visa.svg" alt="">
                     </div>
-                    <div class="textImage">text</div>
+                    <div class="textImage">DC POWER VISA</div>
                 </a>
             </div>
         </div>
@@ -113,6 +113,10 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as *;
+
+footer {
+    font-size: 12px;
+}
 
 #footTop {
     height: 100px;
