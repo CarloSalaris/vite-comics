@@ -2,6 +2,9 @@
 
 export default {
     name: "ProductCard",
+    props: {
+        details: Object,
+    }
 }
 
 </script>
@@ -9,8 +12,8 @@ export default {
 <template>
     <!-- Blocco prodotto -->
     <div class="prodCard">
-        <img src="../assets/img/dc-logo.png" alt="">
-        <h3>testo immagine</h3>
+        <img :src="details.thumb" :alt="details.series" loading="lazy">
+        <h3>{{ details.series }}</h3>
     </div>
 </template>
 

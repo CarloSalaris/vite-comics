@@ -91,10 +91,7 @@ export default {
 <template>
     <section class="prodList">
         <!-- Blocco prodotto -->
-        <div class="prodCard" v-for="(comic, idx) in comics" :key="idx">
-            <img :src="comic.thumb" :alt="comic.series" loading="lazy">
-            <h3>{{ comic.series }}</h3>
-        </div>
+        <ProductCard v-for="(comic, idx) in comics" :key="idx" :details="comic" />
     </section>
 </template>
 
