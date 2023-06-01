@@ -11,7 +11,7 @@ export default {
 <template>
     <main>
         <div class="container">
-            <p> -- content here -- </p>
+            <div class="row"> -- content here -- </div>
         </div>
     </main>
 </template>
