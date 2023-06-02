@@ -5,10 +5,106 @@ export default {
 
     data() {
         return {
-            //dati
+            footerLinks: [
+                {
+                    title: 'DC COMICS',
+                    links: [
+                        {
+                            text: "Characters",
+                            url: "#"
+                        }, {
+                            text: "Comics",
+                            url: "#"
+                        }, {
+                            text: "Movies",
+                            url: "#"
+                        }, {
+                            text: "TV",
+                            url: "#"
+                        }, {
+                            text: "Games",
+                            url: "#"
+                        }, {
+                            text: "Videos",
+                            url: "#"
+                        }, {
+                            text: "News",
+                            url: "#"
+                        }
+                    ]
+                }, {
+                    title: 'SHOP',
+                    links: [
+                        {
+                            text: "Shop DC",
+                            url: "#"
+                        }, {
+                            text: "Shop DC Collectibles",
+                            url: "#"
+                        }
+                    ]
+                }, {
+                    title: 'DC',
+                    links: [
+                        {
+                            text: "Terms Of Use",
+                            url: "#"
+                        }, {
+                            text: "Privacy policy (New)",
+                            url: "#"
+                        }, {
+                            text: "Ad Choices",
+                            url: "#"
+                        }, {
+                            text: "Advertising",
+                            url: "#"
+                        }, {
+                            text: "Jobs",
+                            url: "#"
+                        }, {
+                            text: "Subscription",
+                            url: "#"
+                        }, {
+                            text: "Talent Workshops",
+                            url: "#"
+                        }, {
+                            text: "CPSC Certificates",
+                            url: "#"
+                        }, {
+                            text: "Ratings",
+                            url: "#"
+                        }, {
+                            text: "Shop Help",
+                            url: "#"
+                        }, {
+                            text: "Contact Us",
+                            url: "#"
+                        }
+                    ]
+                }, {
+                    title: 'SITES',
+                    links: [
+                        {
+                            text: "DC",
+                            url: "#"
+                        }, {
+                            text: "MAD Magazine",
+                            url: "#"
+                        }, {
+                            text: "DC Kids",
+                            url: "#"
+                        }, {
+                            text: "DC Universe",
+                            url: "#"
+                        }, {
+                            text: "DC Power VIsa",
+                            url: "#"
+                        }
+                    ]
+                }
+            ]
         }
     }
-
 }
 
 
@@ -66,30 +162,37 @@ export default {
                     <div class="navCol">
                         <h2>DC COMICS</h2>
                         <ul>
-                            <li><a href="#">Characters</a></li>
-                            <li><a href="#">Comics</a></li>
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">TV</a></li>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Videos</a></li>
-                            <li><a href="#">News</a></li>
+                            <li v-for="(link, idx) in footerLinks[0].links" :key="idx">
+                                <a :href="link.url">{{ link.text }}</a>
+                            </li>
                         </ul>
 
                         <h2>SHOP</h2>
                         <ul>
-                            <li><a href="#">Shop DC</a></li>
-                            <li><a href="#">Shop DC Collectibles</a></li>
+                            <li v-for="(link, idx) in footerLinks[1].links" :key="idx">
+                                <a :href="link.url">{{ link.text }}</a>
+                            </li>
                         </ul>
                     </div>
 
                     <!-- Nav Column -->
                     <div class="navCol">
                         <h2>DC</h2>
+                        <ul>
+                            <li v-for="(link, idx) in footerLinks[2].links" :key="idx">
+                                <a :href="link.url">{{ link.text }}</a>
+                            </li>
+                        </ul>
                     </div>
 
                     <!-- Nav Column -->
                     <div class="navCol">
                         <h2>SITES</h2>
+                        <ul>
+                            <li v-for="(link, idx) in footerLinks[3].links" :key="idx">
+                                <a :href="link.url">{{ link.text }}</a>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -234,6 +337,7 @@ footer {
             display: flex;
             gap: 10px;
             color: #0c7cec;
+            align-items: center;
 
             ul {
                 display: flex;
