@@ -246,7 +246,7 @@ export default {
 @use '../styles/partials/variables.scss' as *;
 
 footer {
-    font-size: 12px;
+    font-size: 0.7em;
 }
 
 #footTop {
@@ -306,7 +306,7 @@ footer {
                 margin: 10px;
 
                 h2 {
-                    font-size: 14px;
+                    font-size: 1.2em;
                     margin: 10px 0;
                 }
 

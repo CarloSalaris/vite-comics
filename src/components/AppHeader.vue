@@ -104,7 +104,7 @@ ul {
     }
 
     li {
-        font-size: 10px;
+        font-size: .6em;
         font-weight: 700;
     }
 
