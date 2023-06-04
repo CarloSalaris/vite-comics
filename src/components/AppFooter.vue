@@ -204,7 +204,7 @@ export default {
                 <button>SIGN-UP NOW!</button>
                 <!-- social media -->
                 <div class="socialMedia">
-                    <span class="followUs">
+                    <span>
                         <a href="#">FOLLOW US</a>
                     </span>
                     <ul>
@@ -313,6 +313,11 @@ footer {
                 li {
                     padding: 3px;
                 }
+
+                li:hover {
+                    color: #cecece;
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -333,11 +338,22 @@ footer {
             cursor: pointer;
         }
 
+        button:hover {
+            border: solid 2px #0c7cec;
+            color: #cecece;
+
+        }
+
         .socialMedia {
             display: flex;
             gap: 10px;
             color: #0c7cec;
             align-items: center;
+
+            span a:hover {
+                font-size: 1.1em;
+                font-weight: 700;
+            }
 
             ul {
                 display: flex;
@@ -346,6 +362,14 @@ footer {
 
                 li {
                     width: 20px;
+
+                    img {
+                        border-radius: 50%;
+                    }
+
+                    img:hover {
+                        background-color: #bbbbbb;
+                    }
                 }
             }
         }
