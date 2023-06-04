@@ -51,5 +51,10 @@ main {
         border: none;
         cursor: pointer;
     }
+
+    button:hover {
+        color: #0282f9;
+        background-color: #91caff;
+    }
 }
 </style>
